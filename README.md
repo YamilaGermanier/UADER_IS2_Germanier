@@ -21,4 +21,5 @@
 ### Referencias
 ### Referencias
 ![Logo de UADER FCyT](https://fcytvirtual.entrerios.gov.ar/pluginfile.php/1/theme_klass/logo/1748566104/miuader.PNG)
-[Página web oficial de la Facultad](https://fcyt.uader.edu.ar/)
+
+Visite la [Página web oficial de la Facultad](https://fcyt.uader.edu.ar/)
