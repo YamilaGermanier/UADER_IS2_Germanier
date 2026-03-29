@@ -21,7 +21,25 @@ def factorial(num):
         return fact 
 
 if len(sys.argv) == 1: #0 nunca va a ser xq tiene al menos el nombre del programa
-   print("Debe informar un número!")
+   print("Debe ingresar un número o rango de números para calcular")
    sys.exit()
-num=int(sys.argv[1])
-print("Factorial ",num,"! es ", factorial(num))
+
+input = sys.argv[1] #toma lo ingresado
+
+# el usuario pasa un rango
+if "-" in input: #si está dividido, es decir si hay rango
+    desde, hasta = input.split("-") 
+    
+    desde = int(desde) #toma ccada número como entero
+    hasta = int(hasta)
+
+    if desde > hasta:
+        print("El rango ingresado no es correcto")
+        sys.exit()
+
+    for n in range(desde, hasta + 1):
+        print("factorial", n, "! =", factorial(n))
+
+else:   # si solo hay un número 
+    num = int(input)
+    print("factorial", num, "! =", factorial(num))
